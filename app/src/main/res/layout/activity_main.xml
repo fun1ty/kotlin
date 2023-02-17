@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_background"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="99dp"
+        android:layout_height="152dp"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="35dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="150dp"
+        android:layout_height="143dp"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="494dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="86dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <SearchView
+        android:layout_width="101dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="52dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="275dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="3"
+        tools:layout_editor_absoluteX="164dp"
+        tools:layout_editor_absoluteY="665dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switch"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="164dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="457dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView6"
+        android:layout_width="64dp"
+        android:layout_height="91dp"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="457dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView7"
+        android:layout_width="64dp"
+        android:layout_height="91dp"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="496dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="47dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="311dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="299dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="523dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
