@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이지스퍼블리싱 - 웹페이지 : https://jw910911.tistory.com/24,
+전화번호 : 325-1722, 이메일 : easy@easypub.co.kr"
+        android:autoLink="web|email|phone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/long_text"
+        android:singleLine="true"
+        android:ellipsize="middle"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/long_text"
+        android:maxLines="3"
+        android:ellipsize="end"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:src="@drawable/bdb6abb7c052b5403139f2a6a4e63550_11346612834"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bdb6abb7c052b5403139f2a6a4e63550_11346612834"
+        />
+</LinearLayout>
