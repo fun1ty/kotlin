@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ch06_view</string>
-    <string name="long_text">Yeah yeah h1ghr gang back at it again Yeah yeah better watch out I\'m gonna make it rain 차에 타봐 uh yeah Before I hop out uh yeah 과연 누가 hot uh yeah Brother, you not uh Yeah 다시 돌아왔지 It\'s h1ghr gang Yea, we came back again, whoa 이건 농담 아냐 다 매번 놀라 너무 오른 내 폼에 whoa 화려한 조명이 날 감싸지 않아도 난 빛이 나 불이 꺼져 홀로 남아도 앞을 향해 계속 달려가 yeah</string>
+    <string name="main_desc">회원님의 소중한 정보 보호를 위해, 카카오계정의 현재 비밀번호를 확인해주세요.</string>
+    <string name="password_txt">비밀번호가 기억나지 않으세요? </string>
 </resources>

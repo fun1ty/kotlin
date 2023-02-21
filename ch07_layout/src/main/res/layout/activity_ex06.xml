@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <Button android:text="A"/>
+    <Button android:text="B"/>
+    <Button android:text="C"/>
+    <Button android:text="D"/>
+    <Button android:text="E"/>
+</GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:columnCount="3">
+        <Button android:text="A"/>
+        <Button android:text="B"/>
+        <Button android:text="C"/>
+        <Button android:text="D"/>
+        <Button android:text="E"/>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:rowCount="3">
+        <Button android:text="A"/>
+        <Button android:text="B"/>
+        <Button android:text="C"/>
+        <Button android:text="D"/>
+        <Button android:text="E"/>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:columnCount="3">
+        <Button android:text="A"/>
+        <Button android:text="B"/>
+        <Button android:text="C"
+            android:layout_row="1"
+            android:layout_column="1" />
+        <Button android:text="D"/>
+        <Button android:text="E"/>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:columnCount="3">
+        <Button android:text="A"/>
+        <Button android:text="HelloWorld HelloWorld"/>
+        <Button android:text="C" />
+        <Button android:text="D"/>
+        <Button android:text="E"
+            android:layout_gravity="fill_horizontal"/>
+        <Button android:text="F"/>
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:columnCount="3">
+        <Button android:text="A"/>
+        <Button android:text="HelloWorld HelloWorld"/>
+        <Button android:text="C" />
+        <Button android:text="D"/>
+        <Button android:text="E"/>
+        <Button android:text="F"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="right"/>
+    </GridLayout>
+</LinearLayout>

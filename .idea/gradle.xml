@@ -16,6 +16,8 @@
             <option value="$PROJECT_DIR$/ch04_kotlin" />
             <option value="$PROJECT_DIR$/ch05_kotlin" />
             <option value="$PROJECT_DIR$/ch06_view" />
+            <option value="$PROJECT_DIR$/ch07_layout" />
+            <option value="$PROJECT_DIR$/ch08_event" />
           </set>
         </option>
       </GradleProjectSettings>

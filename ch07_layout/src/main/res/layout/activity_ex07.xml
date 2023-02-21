@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:columnCount="3">
+        <Button android:text="A"
+            android:layout_columnSpan="2"
+            android:layout_rowSpan="2"
+            android:backgroundTint="#4682B4  "
+            android:layout_gravity="fill" />
+        <Button android:text="손영석 바보"
+            android:backgroundTint="#fff "/>
+        <Button android:text="C"
+            android:backgroundTint="#AFEEEE  "/>
+        <Button android:text="D"
+            android:backgroundTint="#ADD8E6  "/>
+        <Button android:text="E"
+            android:backgroundTint="#B0C4DE   "/>
+        <Button android:text="F"
+            android:backgroundTint="#87CEEB  "/>
+    </GridLayout>
+
+</LinearLayout>
