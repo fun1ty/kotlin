@@ -1,15 +1,47 @@
 package com.example.ch08_event
 
 import android.os.Bundle
+import android.os.SystemClock
 import android.util.Log
 import android.view.KeyEvent
 import android.view.MotionEvent
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.ch08_event.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    var initTime =0L  //long 타입
+    var pauseTime =0L
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)  //setContentView 사용할 때마다 초기화가 된다.
+        //setContentView(R.layout.activity_main)  //setContentView 사용할 때마다 초기화가 된다.
+
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.startButton.setOnClickListener {
+            binding.chronometer.base = SystemClock.elapsedRealtime() + pauseTime
+            binding.chronometer.start()
+            binding.stopButton.isEnabled = true
+            binding.resetButton.isEnabled = true
+            binding.resetButton.isEnabled = false
+        }
+        binding.stopButton.setOnClickListener {
+            pauseTime = binding.chronometer.base - SystemClock.elapsedRealtime()
+            binding.chronometer.stop()
+            binding.stopButton.isEnabled = false
+            binding.resetButton.isEnabled = true
+            binding.startButton.isEnabled = true
+        }
+        binding.resetButton.setOnClickListener {
+            pauseTime = 0L
+            binding.chronometer.base = SystemClock.elapsedRealtime()
+            binding.chronometer.stop()
+            binding.startButton.isEnabled = false
+            binding.resetButton.isEnabled = false
+            binding.startButton.isEnabled = true
+        }
+
         /*
         onBackPressedDispatcher?.addCallback(this,object : OnBackPressedCallback(true){
             override fun handleOnBackPressed() {
@@ -34,6 +66,7 @@ class MainActivity : AppCompatActivity() {
         }*/
     }
 
+
     override fun onTouchEvent(event: MotionEvent?): Boolean {
         when(event?.action){
             MotionEvent.ACTION_DOWN -> {
@@ -50,13 +83,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         Log.d("kkang", "onkeyDown")
-        when(keyCode){
-            KeyEvent.KEYCODE_0 -> Log.d("kkang", "0키를 눌렀네요")
-            KeyEvent.KEYCODE_A -> Log.d("kkang", "A키를 눌렀네요")
-
-            KeyEvent.KEYCODE_BACK -> Log.d("kkang", "BACK키를 눌렀네요")
-            KeyEvent.KEYCODE_VOLUME_DOWN -> Log.d("kkang", "VOLUME_DOWN키를 눌렀네요")
-            KeyEvent.KEYCODE_VOLUME_UP -> Log.d("kkang", "VOLUME_UP키를 눌렀네요")
+        if (keyCode===KeyEvent.KEYCODE_BACK){
+            if (System.currentTimeMillis() - initTime >3000){
+                Toast.makeText(this, "종료하려면 한 번 더 누르세요!!",
+                Toast.LENGTH_LONG).show()
+                initTime = System.currentTimeMillis()
+                return true
+            }
         }
         return super.onKeyDown(keyCode, event)
     }
