@@ -8,5 +8,18 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:src="@drawable/gradient_box"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_data1"
+        android:textColor="@color/txt_color"
+        android:background="@color/txt_bg_color"
+        android:textSize="@dimen/txt_size"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
