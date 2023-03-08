@@ -12,7 +12,6 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/txt_data1"
         android:textColor="@color/txt_color"
         android:background="@color/txt_bg_color"
         android:textSize="@dimen/txt_size"/>

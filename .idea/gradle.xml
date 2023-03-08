@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/ch07_layout" />
             <option value="$PROJECT_DIR$/ch08_event" />
             <option value="$PROJECT_DIR$/ch09_resource" />
+            <option value="$PROJECT_DIR$/ch10_notification" />
           </set>
         </option>
       </GradleProjectSettings>

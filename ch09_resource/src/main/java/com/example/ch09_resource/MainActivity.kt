@@ -2,14 +2,14 @@ package com.example.ch09_resource
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.ch09_resource.databinding.ActivityMain2Binding
+import com.example.ch09_resource.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main2)
 
-        var binding = ActivityMain2Binding.inflate(layoutInflater)
+        var binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         //binding.textView.text = getString(R.string.txt_data2)
